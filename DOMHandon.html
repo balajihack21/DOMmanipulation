@@ -29,6 +29,7 @@
       <li class="list-group-item">Item 2</li>
       <li class="list-group-item">Item 3</li>
       <li class="list-group-item">Item 4</li>
+      <li class="trywithtagname">Item 5</li>
     </ul>
    </div>
   </div>
@@ -45,6 +46,10 @@
       items[i].style="font-weight:bold;"
      }
      items[1].style="background-color:green"
+
+     //using Tag name
+    let tagitems=document.getElementsByTagName("li")
+    tagitems[4].style="color:orange;font-weight:bold;"
 </script>
 </body>
 </html>
