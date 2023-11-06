@@ -45,11 +45,22 @@
      for(let i=0;i<items.length;i++){
       items[i].style="font-weight:bold;"
      }
-     items[1].style="background-color:green"
+    //  items[1].style="background-color:green"
 
      //using Tag name
     let tagitems=document.getElementsByTagName("li")
     tagitems[4].style="color:orange;font-weight:bold;"
-</script>
+
+    //using Query selector and Query selesctor all
+    let item_2=document.querySelector("#items")
+    item_2.children[1].style="background-color:green"
+    item_2.children[2].style="opacity:0;"
+     
+    let item_3=document.querySelectorAll("li:nth-child(odd)")
+    for(let i=0;i<item_3.length;i++){
+      item_3[i].style="background-color:green"
+    }
+
+    </script>
 </body>
 </html>
