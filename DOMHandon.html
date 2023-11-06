@@ -60,7 +60,17 @@
     for(let i=0;i<item_3.length;i++){
       item_3[i].style="background-color:green"
     }
+  
+    //Creating Nodes and Modifying Dom
 
+     let newone=document.createElement("h6")
+     newone.innerText="Hello"
+     let heading=document.querySelector("h1")
+     heading.prepend(newone)
+
+     let secondone=document.createElement("h6")
+     secondone.innerText="Hello"
+     item_2.prepend(secondone)
     </script>
 </body>
 </html>
